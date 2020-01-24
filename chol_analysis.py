@@ -6,7 +6,7 @@ def HDL_analysis(HDL_level):
     else:
         return "Low"
 
-def LDL_analysis(LDL_leve):
+def LDL_analysis(LDL_level):
     if LDL_level >=190:
         return "Very High"
     elif 160 <= LDL_level < 190:
