@@ -30,8 +30,17 @@ def cholesterol_analysis():
         answer = LDL_analysis(int(test_info[1]))
         print("The LDL Level is {} ".format(answer))
 
+        
+def cholesterol_analysis():
+        print("Cholesterol Analysis")
+        HDLinput = input("Enter test result: ")
+        test_info = HDLinput.split("=") #splits along the equal sign
+        if test_info[0] == "HDL":
+            answer = HDL_analysis(int(test_info[1]))
+            print("the Level is {} ".format(answer))
+            JDL_analysis()
 
-
+            
 def interface():
     while True:
         print("Cholesterol Calculator")
@@ -43,7 +52,6 @@ def interface():
             return
         elif choice == "1":
             cholesterol_analysis()
-
 
 if __name__ == "__main__":
     interface()
