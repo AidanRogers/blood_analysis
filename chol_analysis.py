@@ -7,7 +7,7 @@ def HDL_analysis(HDL_level):
         return "Low"
 
 def LDL_analysis(LDL_level):
-    if LDL_level >=190:
+    if LDL_level >= 190:
         return "Very High"
     elif 160 <= LDL_level < 190:
         return "High"
@@ -21,12 +21,14 @@ def cholesterol_analysis():
     print("Cholesterol Analysis")
     typetest = input("LDL or HDL for type of test '=' it's value: ")
     test_info = typetest.split("=")  # splits along the equal sign
+    print(test_info[0].strip(" "))
+    print(test_info[1].strip(" "))
     if test_info[0] == "HDL":
         answer = HDL_analysis(int(test_info[1]))
-        print("the Level is {} ".format(answer))
+        print("The HDL Level is {} ".format(answer))
     if test_info[0] == "LDL":
         answer = LDL_analysis(int(test_info[1]))
-        print("the Level is {} ".format(answer))
+        print("The LDL Level is {} ".format(answer))
 
 
 
