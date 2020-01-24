@@ -19,8 +19,8 @@ def LDL_analysis(LDL_leve):
 
 def cholesterol_analysis():
     print("Cholesterol Analysis")
-    HDLinput = input("Enter test result: ")
-    test_info = HDLinput.split("=")  # splits along the equal sign
+    typetest = input("LDL or HDL for type of test '=' it's value: ")
+    test_info = typetest.split("=")  # splits along the equal sign
     if test_info[0] == "HDL":
         answer = HDL_analysis(int(test_info[1]))
         print("the Level is {} ".format(answer))
