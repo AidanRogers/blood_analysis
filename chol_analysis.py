@@ -39,6 +39,11 @@ def cholesterol_analysis():
             answer = HDL_analysis(int(test_info[1]))
             print("the Level is {} ".format(answer))
             JDL_analysis()
+def name_function
+    first_name = input("first")
+    last_name = input("last")
+    return (first_name)(last_name)
+    
 
 
 def interface():
