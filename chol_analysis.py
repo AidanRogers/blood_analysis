@@ -40,9 +40,7 @@ def cholesterol_analysis():
             print("the Level is {} ".format(answer))
             JDL_analysis()
 
-def new_feature():
-    pass
-            
+
 def interface():
     while True:
         print("Cholesterol Calculator")
