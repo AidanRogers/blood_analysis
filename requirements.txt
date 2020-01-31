@@ -1,2 +1,2 @@
-Pytest
-Pyest-pep8
+pytest
+pyest-pep8
