@@ -6,6 +6,7 @@ def HDL_analysis(HDL_level):
     else:
         return "Low"
 
+
 def LDL_analysis(LDL_level):
     if LDL_level >= 190:
         return "Very High"
@@ -25,25 +26,26 @@ def cholesterol_analysis():
     print(test_info[1].strip(" "))
     if test_info[0] == "HDL":
         answer = HDL_analysis(int(test_info[1]))
-        print("The HDL Level is {} ".format(answer))
+        print("The HDL Level is {}".format(answer))
     if test_info[0] == "LDL":
         answer = LDL_analysis(int(test_info[1]))
         print("The LDL Level is {} ".format(answer))
 
-        
+
 def cholesterol_analysis():
-        print("Cholesterol Analysis")
-        HDLinput = input("Enter test result: ")
-        test_info = HDLinput.split("=") #splits along the equal sign
-        if test_info[0] == "HDL":
-            answer = HDL_analysis(int(test_info[1]))
-            print("the Level is {} ".format(answer))
-            JDL_analysis()
-def name_function
+    print("Cholesterol Analysis")
+    HDLinput = input("Enter test result:  ")
+    test_info = HDLinput.split("=")  # splits along the equal sign
+    if test_info[0] == "HDL":
+        answer = HDL_analysis(int(test_info[1]))
+        print("the Level is {} ".format(answer))
+        JDL_analysis()
+
+
+def name_function():
     first_name = input("first")
     last_name = input("last")
     return (first_name)(last_name)
-    
 
 
 def interface():
@@ -57,6 +59,15 @@ def interface():
             return
         elif choice == "1":
             cholesterol_analysis()
+
+
+def fever_check(temp_list):
+    fever = False
+    for temperature in temp_list:
+        if temperature > 98.6:
+            fever = True
+    return fever
+
 
 if __name__ == "__main__":
     interface()
